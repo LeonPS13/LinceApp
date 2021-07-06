@@ -16,8 +16,8 @@ struct NewsBlock: View {
         ZStack {
             
             Rectangle()
-                .foregroundColor(.white)
-                .cornerRadius(14)
+                .foregroundColor(Color(.darkGray))
+                .cornerRadius(18)
                 .shadow(color: .black, radius: 1)
             
             
@@ -25,11 +25,12 @@ struct NewsBlock: View {
                 
                 Text("Titulo")
                     .font(.largeTitle)
-                    .foregroundColor(.black)
+                    
                 ZStack {
                     Rectangle()
                         .foregroundColor(publi)
                         .frame(height: 170)
+                        .cornerRadius(16)
                     Image(systemName: "newspaper")
                         .resizable()
                         .foregroundColor(.black)
@@ -37,9 +38,9 @@ struct NewsBlock: View {
                         .frame(height: 110)
                 }
                 Text("Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto")
-                    .foregroundColor(.black)
+                    
                 Text("#tag #tag #tag #tag")
-                    .foregroundColor(.black)
+                    
                 
                 
             }.padding(.all, 20)

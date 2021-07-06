@@ -3,14 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A444EE7326815A52006E85F8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A444EE7226815A52006E85F8 /* UserModel.swift */; };
+		A47980EA268CED9E00503B78 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47980E9268CED9E00503B78 /* Colors.swift */; };
+		A4F172E7265C5E7000C5E448 /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F172E6265C5E7000C5E448 /* ProfileListView.swift */; };
+		A4F172EA265C5E9600C5E448 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F172E9265C5E9600C5E448 /* ProfileView.swift */; };
+		A4F172ED265C79A500C5E448 /* ProfileBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F172EC265C79A500C5E448 /* ProfileBlock.swift */; };
+		A4F172F1265C7F6900C5E448 /* CreateProfileForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F172F0265C7F6900C5E448 /* CreateProfileForm.swift */; };
+		A4F172F5265C7FCA00C5E448 /* EmptyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F172F4265C7FCA00C5E448 /* EmptyProfile.swift */; };
+		A4F1730E265C8A1F00C5E448 /* ProfilesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1730D265C8A1F00C5E448 /* ProfilesMainView.swift */; };
 		A4F65DD7264F26600038509C /* LinceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65DD6264F26600038509C /* LinceApp.swift */; };
 		A4F65DDB264F26620038509C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F65DDA264F26620038509C /* Assets.xcassets */; };
 		A4F65DDE264F26620038509C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F65DDD264F26620038509C /* Preview Assets.xcassets */; };
-		A4F65DEA264F28270038509C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65DE9264F28270038509C /* User.swift */; };
+		A4F65DEA264F28270038509C /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65DE9264F28270038509C /* Usuario.swift */; };
 		A4F65DED264F50DE0038509C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65DEC264F50DE0038509C /* MainView.swift */; };
 		A4F65DF0264F51F00038509C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65DEF264F51F00038509C /* FeedView.swift */; };
 		A4F65DF3264F52410038509C /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65DF2264F52410038509C /* NewsView.swift */; };
@@ -32,15 +40,31 @@
 		A4F65E3C2650A8BF0038509C /* DesafiosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65E3B2650A8BF0038509C /* DesafiosView.swift */; };
 		A4F65E402650A8D90038509C /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65E3F2650A8D90038509C /* ConfigView.swift */; };
 		A4F65E472650B98F0038509C /* CabecalhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65E462650B98F0038509C /* CabecalhoView.swift */; };
+		A4F65E922655A09B0038509C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4F65E912655A09B0038509C /* GoogleService-Info.plist */; };
+		A4F65EAB2655AAAC0038509C /* LoginformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65EAA2655AAAC0038509C /* LoginformView.swift */; };
+		A4F65EAF2655B2AD0038509C /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65EAE2655B2AD0038509C /* LaunchView.swift */; };
+		A4F65EC92655BD7C0038509C /* CreateAccForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65EC82655BD7C0038509C /* CreateAccForm.swift */; };
+		A4F65EE02655D4650038509C /* AccDetailCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F65EDF2655D4640038509C /* AccDetailCreate.swift */; };
+		D457BC23CCB351DF1C1157A6 /* Pods_Lince.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F96525CAA69C06E04A198D /* Pods_Lince.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ABD652CB59CA81C9018C85F /* Pods-Lince.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lince.debug.xcconfig"; path = "Target Support Files/Pods-Lince/Pods-Lince.debug.xcconfig"; sourceTree = "<group>"; };
+		A1F96525CAA69C06E04A198D /* Pods_Lince.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lince.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A444EE7226815A52006E85F8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A47980E9268CED9E00503B78 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A4F172E6265C5E7000C5E448 /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		A4F172E9265C5E9600C5E448 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A4F172EC265C79A500C5E448 /* ProfileBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBlock.swift; sourceTree = "<group>"; };
+		A4F172F0265C7F6900C5E448 /* CreateProfileForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileForm.swift; sourceTree = "<group>"; };
+		A4F172F4265C7FCA00C5E448 /* EmptyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyProfile.swift; sourceTree = "<group>"; };
+		A4F1730D265C8A1F00C5E448 /* ProfilesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesMainView.swift; sourceTree = "<group>"; };
 		A4F65DD3264F26600038509C /* Lince.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lince.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F65DD6264F26600038509C /* LinceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinceApp.swift; sourceTree = "<group>"; };
 		A4F65DDA264F26620038509C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F65DDD264F26620038509C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4F65DDF264F26620038509C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4F65DE9264F28270038509C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A4F65DE9264F28270038509C /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		A4F65DEC264F50DE0038509C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A4F65DEF264F51F00038509C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A4F65DF2264F52410038509C /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
@@ -62,6 +86,12 @@
 		A4F65E3B2650A8BF0038509C /* DesafiosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafiosView.swift; sourceTree = "<group>"; };
 		A4F65E3F2650A8D90038509C /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
 		A4F65E462650B98F0038509C /* CabecalhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabecalhoView.swift; sourceTree = "<group>"; };
+		A4F65E912655A09B0038509C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4F65EAA2655AAAC0038509C /* LoginformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginformView.swift; sourceTree = "<group>"; };
+		A4F65EAE2655B2AD0038509C /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		A4F65EC82655BD7C0038509C /* CreateAccForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccForm.swift; sourceTree = "<group>"; };
+		A4F65EDF2655D4640038509C /* AccDetailCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccDetailCreate.swift; sourceTree = "<group>"; };
+		A8B48125F45E821A5E8B4F46 /* Pods-Lince.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lince.release.xcconfig"; path = "Target Support Files/Pods-Lince/Pods-Lince.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +99,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D457BC23CCB351DF1C1157A6 /* Pods_Lince.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63D658F75934E295AC354067 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96525CAA69C06E04A198D /* Pods_Lince.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A444EE7126815A3E006E85F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A444EE7226815A52006E85F8 /* UserModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A4F172EF265C7F3E00C5E448 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				A4F1730D265C8A1F00C5E448 /* ProfilesMainView.swift */,
+				A4F172E6265C5E7000C5E448 /* ProfileListView.swift */,
+				A4F172EC265C79A500C5E448 /* ProfileBlock.swift */,
+				A4F172E9265C5E9600C5E448 /* ProfileView.swift */,
+				A4F172F0265C7F6900C5E448 /* CreateProfileForm.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
 		A4F65DCA264F26600038509C = {
 			isa = PBXGroup;
 			children = (
 				A4F65DD5264F26600038509C /* Lince */,
 				A4F65DD4264F26600038509C /* Products */,
+				E401F53B683DD9CCB396B3F3 /* Pods */,
+				63D658F75934E295AC354067 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				A4F65DD6264F26600038509C /* LinceApp.swift */,
+				A4F65EAE2655B2AD0038509C /* LaunchView.swift */,
+				A444EE7126815A3E006E85F8 /* ViewModel */,
 				A4F65DE7264F27090038509C /* Models */,
+				A4F65E362650A4130038509C /* Auxiliary */,
 				A4F65DE6264F27020038509C /* Views */,
 				A4F65DDA264F26620038509C /* Assets.xcassets */,
 				A4F65DDF264F26620038509C /* Info.plist */,
+				A4F65E912655A09B0038509C /* GoogleService-Info.plist */,
 				A4F65DDC264F26620038509C /* Preview Content */,
 			);
 			path = Lince;
@@ -116,12 +181,13 @@
 			isa = PBXGroup;
 			children = (
 				A4F65DEC264F50DE0038509C /* MainView.swift */,
+				A4F172F4265C7FCA00C5E448 /* EmptyProfile.swift */,
+				A4F65EA92655AA900038509C /* Login */,
 				A4F65E072650598D0038509C /* User */,
 				A4F65E062650597A0038509C /* Discovery */,
 				A4F65E052650596E0038509C /* Notifications */,
 				A4F65E04265059690038509C /* News */,
 				A4F65E03265059620038509C /* Feed */,
-				A4F65E362650A4130038509C /* Auxiliary */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,7 +195,7 @@
 		A4F65DE7264F27090038509C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A4F65DE9264F28270038509C /* User.swift */,
+				A4F65DE9264F28270038509C /* Usuario.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +241,7 @@
 		A4F65E072650598D0038509C /* User */ = {
 			isa = PBXGroup;
 			children = (
+				A4F172EF265C7F3E00C5E448 /* Profiles */,
 				A4F65E2E265098670038509C /* CalendarView.swift */,
 				A4F65DFB264F54880038509C /* UserView.swift */,
 				A4F65E382650A8B20038509C /* ContractsView.swift */,
@@ -216,8 +283,28 @@
 			children = (
 				A4F65E3226509A470038509C /* PhotoChangeView.swift */,
 				A4F65E462650B98F0038509C /* CabecalhoView.swift */,
+				A47980E9268CED9E00503B78 /* Colors.swift */,
 			);
 			path = Auxiliary;
+			sourceTree = "<group>";
+		};
+		A4F65EA92655AA900038509C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A4F65EAA2655AAAC0038509C /* LoginformView.swift */,
+				A4F65EC82655BD7C0038509C /* CreateAccForm.swift */,
+				A4F65EDF2655D4640038509C /* AccDetailCreate.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E401F53B683DD9CCB396B3F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ABD652CB59CA81C9018C85F /* Pods-Lince.debug.xcconfig */,
+				A8B48125F45E821A5E8B4F46 /* Pods-Lince.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F65DE2264F26620038509C /* Build configuration list for PBXNativeTarget "Lince" */;
 			buildPhases = (
+				1DAC4CC00A000CCD7EAAE197 /* [CP] Check Pods Manifest.lock */,
 				A4F65DCF264F26600038509C /* Sources */,
 				A4F65DD0264F26600038509C /* Frameworks */,
 				A4F65DD1264F26600038509C /* Resources */,
+				4091DA010AADBA837B6C8E22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,26 +368,80 @@
 			files = (
 				A4F65DDE264F26620038509C /* Preview Assets.xcassets in Resources */,
 				A4F65DDB264F26620038509C /* Assets.xcassets in Resources */,
+				A4F65E922655A09B0038509C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DAC4CC00A000CCD7EAAE197 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lince-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4091DA010AADBA837B6C8E22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lince/Pods-Lince-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lince/Pods-Lince-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lince/Pods-Lince-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4F65DCF264F26600038509C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F65EE02655D4650038509C /* AccDetailCreate.swift in Sources */,
 				A4F65E00265050DA0038509C /* publiBlock.swift in Sources */,
 				A4F65DF0264F51F00038509C /* FeedView.swift in Sources */,
 				A4F65E392650A8B20038509C /* ContractsView.swift in Sources */,
+				A4F1730E265C8A1F00C5E448 /* ProfilesMainView.swift in Sources */,
+				A4F65EC92655BD7C0038509C /* CreateAccForm.swift in Sources */,
 				A4F65E15265062C70038509C /* MarketplaceView.swift in Sources */,
 				A4F65E402650A8D90038509C /* ConfigView.swift in Sources */,
+				A444EE7326815A52006E85F8 /* UserModel.swift in Sources */,
+				A4F172F1265C7F6900C5E448 /* CreateProfileForm.swift in Sources */,
 				A4F65DF9264F52C60038509C /* DiscoveryView.swift in Sources */,
+				A4F65EAB2655AAAC0038509C /* LoginformView.swift in Sources */,
 				A4F65E09265059ED0038509C /* NewsBlock.swift in Sources */,
 				A4F65E0F265062A30038509C /* ComunityView.swift in Sources */,
+				A4F172EA265C5E9600C5E448 /* ProfileView.swift in Sources */,
+				A4F172F5265C7FCA00C5E448 /* EmptyProfile.swift in Sources */,
 				A4F65E3C2650A8BF0038509C /* DesafiosView.swift in Sources */,
+				A4F172E7265C5E7000C5E448 /* ProfileListView.swift in Sources */,
 				A4F65E3326509A470038509C /* PhotoChangeView.swift in Sources */,
+				A4F172ED265C79A500C5E448 /* ProfileBlock.swift in Sources */,
+				A4F65EAF2655B2AD0038509C /* LaunchView.swift in Sources */,
 				A4F65E472650B98F0038509C /* CabecalhoView.swift in Sources */,
 				A4F65DED264F50DE0038509C /* MainView.swift in Sources */,
 				A4F65E25265088470038509C /* ComunityFeaturedView.swift in Sources */,
@@ -306,9 +449,10 @@
 				A4F65DD7264F26600038509C /* LinceApp.swift in Sources */,
 				A4F65E0C26505BCA0038509C /* NotificationBlock.swift in Sources */,
 				A4F65E2926508D950038509C /* StreamingFeaturedView.swift in Sources */,
-				A4F65DEA264F28270038509C /* User.swift in Sources */,
+				A4F65DEA264F28270038509C /* Usuario.swift in Sources */,
 				A4F65DFC264F54880038509C /* UserView.swift in Sources */,
 				A4F65E2F265098670038509C /* CalendarView.swift in Sources */,
+				A47980EA268CED9E00503B78 /* Colors.swift in Sources */,
 				A4F65E2C26508F670038509C /* MarketplaceFeaturedView.swift in Sources */,
 				A4F65DF6264F52830038509C /* NotificationsView.swift in Sources */,
 				A4F65E12265062BA0038509C /* StreamingView.swift in Sources */,
@@ -436,6 +580,7 @@
 		};
 		A4F65DE3264F26620038509C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABD652CB59CA81C9018C85F /* Pods-Lince.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +603,7 @@
 		};
 		A4F65DE4264F26620038509C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8B48125F45E821A5E8B4F46 /* Pods-Lince.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

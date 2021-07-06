@@ -7,22 +7,22 @@
 
 import Foundation
 
-class User: Identifiable {
+class User: Identifiable, ObservableObject {
     
     var dados: Dados = Dados()
     var login: Login = Login()
-    var perfil: [Perfil] = [Perfil()]
-    var interesses: [String] = [""]
+    var perfis: [Perfil] = []
     
 }
 
-class Dados: Identifiable {
+class Dados: Identifiable, ObservableObject {
     
     var nome: String = ""
     var sobrenome: String = ""
     var dataNasc: Date = Date()
     var endereco: Endereco = Endereco()
     var idiomaP: String = ""
+    var docType: String = ""
     var cpfCnpj: String = ""
     var email: String = ""
     var telefone: String = ""
@@ -32,7 +32,7 @@ class Dados: Identifiable {
     
 }
 
-class Endereco: Identifiable {
+class Endereco: Identifiable, ObservableObject {
     
     var cidade: String = ""
     var estado: String = ""
@@ -43,16 +43,20 @@ class Endereco: Identifiable {
 }
 
 
-class Login: Identifiable {
+class Login: Identifiable, ObservableObject {
     
     var usuario: String = ""
     var senha: String = ""
     
 }
 
-class Perfil: Identifiable {
+class Perfil: Identifiable, ObservableObject {
     
     var profType: String = ""
+    
+    var id: Int = 0
+    
+    var username: String = ""
     
     var esporte: String?
     var titulos: [Titulos]?
@@ -62,54 +66,50 @@ class Perfil: Identifiable {
     var foto: String = ""
     var nacionalidade: String = ""
     var pcd: Bool = false
-    var altura: Double = 0
-    var peso: Double = 0
-    var percentualGordura: Double = 0
+    var altura: Double?
+    var peso: Double?
+    var percentualGordura: Double?
     var biog: String = ""
     var classificacao: String?
     var contatos: Contato?
-    var redes: [URL]?
+    var redes: [String]?
     var experienciaProf: [Experiencia]?
-    var conquistas: [Conquista]?
-    var estatisticas: [Estatisticas]?
+    var conquistas: [String]?
+    var estatisticas: Estatisticas?
     var fotos: [String]?
     var videos: Videos?
     var quemVisitou: [String]?
-    var numeroSeguidores: Int = 0
-    var numeroSeguidos: Int = 0
+    var numeroSeguidores: Int = 100
+    var numeroSeguidos: Int = 100
     var patrocinadores: [String]?
+    var interesses: [String] = [""]
     
 }
 
-class Conquista: Identifiable {
-    
-    var nome: String?
-    var data: Date?
-    
-}
-
-class Loja: Identifiable {
+class Loja: Identifiable, ObservableObject {
     
     var serviços: URL?
     var produtos: [String]?
     
 }
 
-class CaseDeSucesso: Identifiable {
+class CaseDeSucesso: Identifiable, ObservableObject {
+    
+    var id: String = UUID().uuidString
     
     var usuario: String?
     var descricao: String?
     
 }
 
-class Titulos: Identifiable {
+class Titulos: Identifiable, ObservableObject {
     
     var titulo: String?
     var orgao: String?
     
 }
 
-class Contato: Identifiable {
+class Contato: Identifiable, ObservableObject {
     
     var email: String?
     var phone: String?
@@ -117,7 +117,7 @@ class Contato: Identifiable {
     
 }
 
-class Experiencia: Identifiable {
+class Experiencia: Identifiable, ObservableObject {
     
     var inicio: Date?
     var fim: Date?
@@ -125,14 +125,14 @@ class Experiencia: Identifiable {
     
 }
 
-class Estatisticas: Identifiable {
+class Estatisticas: Identifiable, ObservableObject {
     
     var partidasJogadas: Int?
     var partidasVencidas: Int?
     
 }
 
-class Videos: Identifiable {
+class Videos: Identifiable, ObservableObject {
     
     var highlights: [URL]?
     var teaser: URL?

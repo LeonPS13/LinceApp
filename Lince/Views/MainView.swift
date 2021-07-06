@@ -8,45 +8,40 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
         
-        ZStack {
+        
+        TabView {
             
-            Rectangle()
-                .foregroundColor(.white)
+            FeedView()
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                }
             
-            TabView {
-                
-                FeedView()
-                    .tabItem {
-                        Image(systemName: "list.bullet")
-                    }
-
-                NewsView()
-                    .tabItem {
-                        Image(systemName: "newspaper")
-                    }
-                
-                NotificationsView()
-                    .tabItem {
-                        Image(systemName: "exclamationmark.circle")
-                    }
-                
-                DiscoveryView()
-                    .tabItem {
-                        Image(systemName: "staroflife")
-                    }
-                    
-                
-                UserView()
-                    .tabItem {
-                        Image(systemName: "person")
-                    }
-            }
+            NewsView()
+                .tabItem {
+                    Image(systemName: "newspaper")
+                }
+            
+            NotificationsView()
+                .tabItem {
+                    Image(systemName: "exclamationmark.circle")
+                }
+            
+            DiscoveryView()
+                .tabItem {
+                    Image(systemName: "staroflife")
+                }
+            
+            UserView()
+                .tabItem {
+                    Image(systemName: "person")
+                }
             
         }
-        .background(Color(.white))
-        .ignoresSafeArea()
+        .preferredColorScheme(.dark)
+        .background(Color.black)
         
         
     }

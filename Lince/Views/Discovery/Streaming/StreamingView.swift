@@ -16,29 +16,32 @@ struct StreamingView: View {
         ZStack(alignment: .leading) {
             
             Rectangle()
-                .foregroundColor(.white)
-                .cornerRadius(12)
-                .shadow(radius: 5)
+                .foregroundColor(Color(.darkGray))
+                .cornerRadius(18)
+                .frame(height: 140)
             
             HStack{
                 ZStack {
                     Circle()
                         .foregroundColor(stream)
-                        .frame(height: 100)
+                        .frame(width:100, height: 100)
                     Image(systemName: "video")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 30)
-                        .opacity(0.3)
+                        .foregroundColor(.white)
+                        .opacity(0.5)
                         .padding()
-                }
+                }.padding(.leading,10)
                 
                 Spacer()
                 
-                Text("Nome do Stream")
-                    
-                    .foregroundColor(.black)
+                Text("Nome do stream")
+                    .bold()
+                    .foregroundColor(.white)
                     .font(.title)
+                    .multilineTextAlignment(.center)
+                    .padding(.trailing, 10)
                 
                 
             }.padding()

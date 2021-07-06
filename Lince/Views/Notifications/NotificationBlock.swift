@@ -13,31 +13,38 @@ struct NotificationBlock: View {
     
     var body: some View {
        
-        ZStack {
+        ZStack{
             
             Rectangle()
-                .foregroundColor(.white)
-                .cornerRadius(12)
+                .foregroundColor(Color(.darkGray))
+                .cornerRadius(18)
                 .shadow(radius: 5)
             
             HStack{
                 ZStack {
                     Circle()
                         .foregroundColor(.gray)
+                        
                     Image(systemName: "exclamationmark.circle")
                         .resizable()
                         .scaledToFit()
                         .opacity(0.3)
                 }
+                
+                
                 Text("Text Text Text Text Text Text Text Text Text")
-                    .foregroundColor(.black)
+                    .font(.body)
                 Rectangle()
                     .foregroundColor(notification)
-                    .cornerRadius(10)
+                    .cornerRadius(16)
+                    .frame(width: 100, height: 100)
                 
-            }.padding()
+            }
+            .padding()
             
-        }.padding()
+        }
+        .padding()
+
         
     }
 }

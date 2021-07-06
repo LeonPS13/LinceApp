@@ -16,27 +16,31 @@ struct publiBlock: View {
         ZStack {
             
             Rectangle()
-                .foregroundColor(.white)
-                .cornerRadius(14)
+                .cornerRadius(18)
                 .shadow(color: .black, radius: 1)
+                .foregroundColor(Color(.darkGray))
                 
                 
             VStack(alignment: .leading) {
                 
                 Text("Titulo")
                     .font(.largeTitle)
-                    .foregroundColor(.black)
+
                 Rectangle()
                     .foregroundColor(publi)
                     .frame(height: 170)
+                    .cornerRadius(16)
+                
                 Text("Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto")
-                    .foregroundColor(.black)
-                Text("#tag #tag #tag #tag")
-                    .foregroundColor(.black)
 
-            }.padding(.all, 20)
+                Text("#tag #tag #tag #tag")
+
+
+            }
+            .padding(.all, 20)
             
-        }.padding()
+        }
+        .padding()
         
     }
 }

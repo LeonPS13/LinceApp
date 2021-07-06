@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct LinceApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            LaunchView()
+                .environmentObject(UserModel())
+                .environment(\.colorScheme, .dark)
         }
     }
 }

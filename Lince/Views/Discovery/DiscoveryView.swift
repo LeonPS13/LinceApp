@@ -9,6 +9,10 @@ import SwiftUI
 
 struct DiscoveryView: View {
     
+    let neon1 = Color(#colorLiteral(red: 0.7028765741, green: 0.9768045545, blue: 0.009863989394, alpha: 1))
+    let neon2 = Color(#colorLiteral(red: 0.0493834918, green: 0.8453449901, blue: 0.9768045545, alpha: 1))
+    let neon3 = Color(#colorLiteral(red: 0.9768045545, green: 0.005682029335, blue: 0.7720370183, alpha: 1))
+    
     @State var ViewType: Int = 0
     
     let notifications: [Color] = [.blue, .green, .orange, .pink, .red, .purple, .yellow, .black]
@@ -18,20 +22,16 @@ struct DiscoveryView: View {
         
         VStack {
             
-            Rectangle()
-                .frame(height: 40)
-                .foregroundColor(.white)
+            CabecalhoView(titulo: "Descubra")
             
             Picker(selection: $ViewType, label: Text("Picker"), content: {
-                Text("Comunidades").bold().tag(1)
-                Text("Streaming").bold().tag(2)
-                Text("MarketPlace").bold().tag(3)
+                Text("Comunidades").tag(1)
+                Text("Streaming").tag(2)
+                Text("MarketPlace").tag(3)
                 
             })
             .pickerStyle(SegmentedPickerStyle())
-            .font(.title)
             .frame(height: 60)
-            .foregroundColor(.black)
             
             Divider()
             
@@ -44,7 +44,7 @@ struct DiscoveryView: View {
                         Text("Recomendados")
                             .bold()
                             .font(.largeTitle)
-                            .foregroundColor(.black)
+                            .foregroundColor(neon1)
                         
                         ComunityFeaturedView()
                         
@@ -53,7 +53,7 @@ struct DiscoveryView: View {
                         Text("Suas comunidades")
                             .bold()
                             .font(.largeTitle)
-                            .foregroundColor(.black)
+                            .foregroundColor(neon1)
                         
                         ForEach(notifications, id: \.self) { i in
                             ComunityView(comunidade: i)
@@ -67,18 +67,18 @@ struct DiscoveryView: View {
                     VStack(alignment: .leading){
                         
                         Text("Recomendados")
+                            .foregroundColor(neon1)
                             .bold()
                             .font(.largeTitle)
-                            .foregroundColor(.black)
                         
                         StreamingFeaturedView()
                         
                         Divider()
                         
                         Text("Suas streams")
+                            .foregroundColor(neon1)
                             .bold()
                             .font(.largeTitle)
-                            .foregroundColor(.black)
                         
                         ForEach(notifications, id: \.self) { i in
                             StreamingView(stream: i)
@@ -94,7 +94,7 @@ struct DiscoveryView: View {
                         Text("Recomendados")
                             .bold()
                             .font(.largeTitle)
-                            .foregroundColor(.black)
+                            .foregroundColor(neon1)
                         
                         MarketplaceFeaturedView()
                         
@@ -103,7 +103,7 @@ struct DiscoveryView: View {
                         Text("Suas lojas")
                             .bold()
                             .font(.largeTitle)
-                            .foregroundColor(.black)
+                            .foregroundColor(neon1)
                         
                         ForEach(notifications, id: \.self) { i in
                             MarketplaceView(loja: i)
@@ -113,26 +113,26 @@ struct DiscoveryView: View {
                 }
                 else {
                     
-                    Spacer()
-                    
-                    Image(systemName: "swift")
-                        .resizable()
-                        .scaledToFit()
-                        .padding()
-                        .foregroundColor(.black)
-                    
-                    Spacer()
-                    
-                    Text("Explore !")
-                        .bold()
-                        .font(.largeTitle)
-                        .foregroundColor(.black)
+                    VStack(spacing: 30){
+                        
+                        Image(systemName: "swift")
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
+                            .foregroundColor(neon1)
+                        
+                        
+                        Text("Explore !")
+                            .bold()
+                            .font(.largeTitle)
+                            .foregroundColor(neon1)
+                        
+                    }.padding(.vertical)
                 }
             }
             
         }
-        .foregroundColor(.black)
-        .background(Color(.white))
+        .preferredColorScheme(.dark)
         .ignoresSafeArea()
         
         
